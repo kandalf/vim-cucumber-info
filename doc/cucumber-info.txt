@@ -1,0 +1,23 @@
+*cucumber-info.txt*       Plugin for listing Cucumber's scenarios and steps
+
+==========================================================================
+1. Intro                                                           *Intro*
+
+This plugin adds 2 commands if the filetype is "cucumber" (which is set by
+the cucumber.vim plugin):
+
+- ListScenarios
+- ListSteps
+
+ListScenarios will list all the scenarios in the current file
+ListSteps will list all the defined steps for any feature file
+
+This plugin doesn't add any mappings, it's up to you to add them or not.
+
+==========================================================================
+1. Installation                                             *Installation*
+
+Extract the plugin files into your ~/.vim directory. You should have 2 
+files: >
+    plugin/cucumber-info.vim
+    doc/cucumber-info.txt
