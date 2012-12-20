@@ -1,4 +1,3 @@
-let s:feature_filename = expand('%')
 
 function! s:CreateBuffer()
   botright new
@@ -12,6 +11,7 @@ endfunction
 
 function! ListScenarios()
   if &ft == "cucumber"
+    let s:feature_filename = expand('%')
     call s:CreateBuffer()
     set filetype=cucumber
     execute '$read !grep Scenario ' . s:feature_filename . ' | sed -e "s/^*\s$//g" | sed -e "s/^\s//g"'
