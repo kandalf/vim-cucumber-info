@@ -1,6 +1,6 @@
 
 function! s:CreateBuffer()
-  botright new
+  bel new
   setlocal buftype=nofile bufhidden=wipe nobuflisted noswapfile nowrap nonumber
 endfunction
 
